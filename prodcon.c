@@ -65,3 +65,20 @@ void consumer()
     x--;
     mutex=signal(mutex);
 }
+/*
+1.Producer
+2.Consumer
+3.Exit
+Enter your choice:1
+
+Producer produces the item 1
+Enter your choice:1
+
+Producer produces the item 2
+Enter your choice:1
+
+Producer produces the item 3
+Enter your choice:1
+Buffer is full!!
+Enter your choice:
+*/
