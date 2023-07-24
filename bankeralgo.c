@@ -1,9 +1,10 @@
 #include<stdio.h>
+#include<stdlib.h>
 #include<conio.h>
 
 void main(){
     int k=0,a=0,b=0,instance[5],availability[5],allocated[10][5],need[10][5],max[10][5],process,P[10],noofresources,cnt=0,i,j;
-    int op[5];
+
     printf("\n Enter the no of resources:");
     scanf("%d",&noofresources);
     printf("Enter the max instances of each resources:");
@@ -12,7 +13,7 @@ void main(){
     {
         availability[i]=0;
         printf("%c=",(i+97));
-        scanf("%d",&instance[i]);
+        scanf("%d",instance[i]);
 
     }
     printf("\n Enter the no of processes:");
@@ -57,7 +58,7 @@ void main(){
         
         if(cnt==noofresources)
         {
-             op[k++]=P[i];
+            op[k++]=P[i];
             for ( j = 0; j < noofresources; j++)
             {
                 availability[j]+=allocated[b][j];
